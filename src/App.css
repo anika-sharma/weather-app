@@ -1,0 +1,170 @@
+/** Fonts **/
+/* latin-ext */
+/* latin-ext */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v7/HhyaU5sn9vOmLzlmC_WoEoZKdbA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dosis Regular'), local('Dosis-Regular'), url(https://fonts.gstatic.com/s/dosis/v7/HhyaU5sn9vOmLzloC_WoEoZK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Dosis-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Dosis SemiBold'), local('Dosis-SemiBold'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzG3L-CLMItgT7kJx_E.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Dosis-SemiBold';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Dosis SemiBold'), local('Dosis-SemiBold'), url(https://fonts.gstatic.com/s/dosis/v7/HhyXU5sn9vOmLzG3L-CFMItgT7kJ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/** Container **/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.container>h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #333;
+  font-family: 'Dosis-SemiBold', sans-serif;
+}
+
+.location-search-input {
+  height: 33px;
+  width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #eee;
+}
+
+.location-search-input:focus {
+  outline: none;
+}
+
+.autocomplete-dropdown-container {
+  position: fixed;
+  width: 400px;
+}
+
+.weather-card {
+  width: 80%;
+  box-shadow: 5px 5px 10px #d8d8d8;
+  color: #fff;
+  margin: 21.40px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/** Weather Card Components **/
+.weather-card .city,
+.weather-card .conditions,
+.weather-card .temperature {
+  font-family: 'Dosis', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.weather-card .conditions {
+  font-size: 2.3em;
+}
+
+.weather-card .city {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+.weather-icon-block {
+  font-size: 20em;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.weather-card .temperature {
+  font-size: 6em;
+  margin-top: 25px;
+}
+
+.weather-card>section {
+  font-size: 1.2em;
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  margin: 5% auto;
+}
+
+.weather-details>p i {
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+.weather-details>p span {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/** Weather Colors **/
+.very-warm {
+  background-color: #F57F17;
+}
+
+.warm {
+  background-color: #FDD835;
+}
+
+.normal {
+  background-color: #0091EA;
+}
+
+.cold {
+  background-color: linear-gradient(rgba(49,27,146,.7), rgba(49,27,146,.7));
+}
+
+.very-cold {
+  background-color: #1A237E;
+}
+
+@media only screen and (max-width: 700px){
+  .location-search-input,
+  .autocomplete-dropdown-container { 
+    width: 100%;
+  }
+
+  .weather-card {
+    width: 100%;
+  }
+
+  .weather-icon-block {
+    font-size: 12em;
+  }
+
+  .weather-card>section .temperature {
+    font-size: 5em;
+  }
+
+  .weather-card>section .humidity,
+  .weather-card>section .humidity i,
+  .weather-card>section .conditions {
+    font-size: 1.5em;
+  }
+}
