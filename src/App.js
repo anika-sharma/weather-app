@@ -108,9 +108,10 @@ class App extends Component {
           //Set Background Image
           utils.getCityImage(response.data.name)
           .then((response) => {
-            //Set Background Image
+            //Set Background Image and query
             this.setState({
-              backgroundImage: response.data.photos[0].image.web
+              backgroundImage: response.data.photos[0].image.web,
+              query: ''
             })
           })
           .catch((error) => {
