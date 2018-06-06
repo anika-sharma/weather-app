@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const rootUrl =  'http://api.openweathermap.org/data/2.5/weather?';
+const rootUrl =  'https://api.openweathermap.org/data/2.5/weather?';
 const apiUrl = '&appid=c0b8c5b5962f2fa4a9be20a4100a61e8';
 
 export const getWeatherData = (place) => {
