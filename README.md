@@ -8,6 +8,11 @@ Run npm install <br />
 Run yarn run start <br />
 Project should open in browser <br />
 
+![alt text](src/images/screenshot-new-york.png)
+![alt text](src/images/screenshot-city-search.png)
+![alt text](src/images/screenshot-kolkata.png)
+![alt text](src/images/screenshot-helsinki.png)
+
 ## Credits
 [Erik Flowers Weather Icons](http://erikflowers.github.io/weather-icons/) <br />
 OpenWeatherMap <br />
